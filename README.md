@@ -8,6 +8,5 @@ Jag har valt att göra en chatt
 
 3. Du börjar chatta.
 
-# Tanken
-Jag vill att man ska kunna skicka privata meddeladen.
-Man ska kunna se alla inloggade.
+# Målet
+Målet med detta projekt är att användarna på hotellet ska kunna kommunicera med varandra i ett trevligt chatt gränssnitt.
