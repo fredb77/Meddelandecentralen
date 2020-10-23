@@ -1,8 +1,32 @@
-﻿@{
+﻿@model Meddelandecentralen.Models.UserModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class=" text-center container">
+    <div class="m-5 row">
+        <div class="col-sm">
+            <h2 class="display-4">Meddelandecentralen</h2>
+        </div>
+    </div>
+    <div class="m-5 row">
+        <div class="col-sm">
+            <h4>Detta är en chatt för hotellets anställda</h4>
+        </div>
+    </div>
+    <div class="m-5 row">
+        <div class="col-sm">
+            @using (Html.BeginForm("Index", "Chat", FormMethod.Post))
+            {
+                @Html.TextBoxFor(m => m.UserName, new { required = "required", placeholder = "Användarnamn...", MaxLength = "10" })
+                @Html.ValidationMessageFor(m => m.UserName)
+                <button type="submit">Börja chatta!</button>
+            }
+        </div>
+    </div>
+    <div class="m-5 row">
+        <div class="col-sm">
+        </div>
+    </div>
 </div>
+<script src="~/js/site.js"></script>

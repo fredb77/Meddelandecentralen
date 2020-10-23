@@ -1,0 +1,45 @@
+﻿
+@model IEnumerable<Meddelandecentralen.Models.UserModel>
+
+@{
+    ViewBag.Title = "Standings";
+}
+
+<div class="container w-100" style="margin-top: 50px">
+    <div class="row">
+        <h4>Chatten</h4>
+    </div>
+    <div class="row">
+        Användare:&nbsp;
+        @foreach (var item in Model)
+        {
+            <b>@item.UserName</b>
+            <input type="hidden" value="@item.UserName" id="userInput" />
+        }
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div>
+        <div>
+            <div style="margin-bottom:10px" id="messagesList"></div>
+        </div>
+    </div>
+    
+    <div class="row">
+    
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-8">
+            <input type="text" style="width:100%" id="messageInput" placeholder="Lämna ett meddelande..." required />
+        </div>
+        <div class="col-4">
+            <input type="button" id="sendButton" value="Skicka meddelandet" />
+        </div>
+    </div>
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/site.js"></script>
