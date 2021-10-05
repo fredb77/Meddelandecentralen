@@ -9,5 +9,5 @@ Jag har valt att göra en chatt
 3. Börjar chatta.
 
 # Målet
-Målet med detta projekt är att användarna på hotellet ska kunna 
-kommunicera med varandra i ett enkelt och trevligt chatt gränssnitt.
+Målet med detta projekt är att användarna ska kunna 
+kommunicera med varandra i realtid, i ett enkelt och trevligt chatt gränssnitt.
